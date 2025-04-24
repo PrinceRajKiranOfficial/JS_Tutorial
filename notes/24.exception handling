@@ -1,0 +1,59 @@
+Exception handling
+    • When executing code, different errors can occur.
+    • Errors can be coding errors made by the programmer, errors due to wrong input, and other unforeseeable things.
+    • Exception handling is a process or method used for handling the abnormal statements in the code and executing them. It also enables to handle the flow control of the code/program.
+    • For example, the Division of a non-zero value with zero will result into infinity always, and it is an exception.
+Thus, with the help of exception handling, it can be executed and handled.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+we cannot stop the exception but can go with alternative ways
+
+
+Types of Errors:
+    While coding, there can be three types of errors in the code:
+        • Runtime Error: When an error occurs during the execution of the program, such an error is known as Runtime error. The codes which create runtime errors are known as Exceptions. Thus, exception handlers are used for handling runtime errors.
+        • Logical Error: An error which occurs when there is any logical mistake in the program that may not produce the desired output, and may terminate abnormally. Such an error is known as Logical error.
+
+
+
+Exception Handling Statements
+• These are following statements that handle if any exception occurs:
+    →try: The try statement lets you test a block of code for errors.
+    →catch: The catch statement lets you handle the error.
+    →finally: The finally statement lets you execute code, after try and catch, regardless of the result.
+
+        Syntax:
+            try {expression;}
+            catch(error) {expression;}
+            finally {expression;}//Executable code
+
+
+
+
+        example 1: 
+               try {
+            let num = 1;
+            console.log(num.toUppercase())
+            }
+            catch (err) {
+                console.log("Number cannot be converted to uppercase" + err)
+            }
+            finally {
+                console.log("code is exected successfully")
+            }
+
+        example 2:
+                try {
+                    console.log(a);
+                    }
+                catch(hii) {
+                    console.log("assign the variable " +hii) ;
+                }
+                finally {
+                    console.log("Program executed succefully    ");
+                }//Executable code
+                
+                let x=10;
+                let y=20;
+                console.log(x+y);
+            

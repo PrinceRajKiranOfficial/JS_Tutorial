@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // parse Int
+        console.log("-10");//-10 of string
+        console.log(parseInt("-10"));//-10 of number
+        console.log("-10.3");//-10.3 of string
+        console.log(parseInt("-10.3"));//-10 of number
+        console.log(parseInt("10 20 30"));//10 (after space not calculated)
+        console.log(parseInt("10 years"));//10 (after space not calculated)
+        console.log(parseInt("years 10"));//NaN (after space not calculated)
+        console.log(parseInt("years10"));//NaN (because input starts with letters)
+        console.log(parseInt("10years"));//10 (letter will not be shown)
+
+
+
+
+        //parseFloat
+        console.log("-10");//-10 of string
+        console.log(parseFloat("-10"));//-10 of number
+        console.log("-10.3");//-10.3 of string
+        console.log(parseFloat("-10.3"));//-10.3 of number(floating point number)
+        
+        console.log(parseFloat("10 20 30"));//10 (after space not calculated)
+        console.log(parseFloat("10 years"));//10 (after space not calculated)
+        console.log(parseFloat("years 10"));//NaN (after space not calculated)
+        console.log(parseFloat("years10"));//NaN (because input starts with letters)
+        console.log(parseFloat("10years"));//10 (letter will not be shown)
+
+
+
+
+
+        //NUMBER
+        console.log(Number("10")); // 10
+        console.log(Number("10.5")); // 10.5
+
+        let a = Number("10");
+        console.log(typeof(a))
+        
+        let b=Number("india")
+        console.log(b)//NaN
+        console.log(typeof(b))//number
+        
+        let x = +"10"
+        console.log(typeof(x))//number
+
+        console.log("100" -10 + "50") //9050
+        
+        console.log(+"100" + 10 - "50") //60
+        console.log("100" + 10 - "50") //9960 (10010-50 = 9960  [since 100 is not a number it will concatenate with with 10 to make 10010 the normal substraction])
+
+
+
+
+        // console.log(Number("10 years")); // NaN (because input starts with letters)
+    </script>
+</body>
+</html>

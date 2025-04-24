@@ -1,0 +1,58 @@
+Conditional Statements- switch
+• It is an elegant way to replace multiple else-if statements
+• Syntax:
+    switch(expression)
+        {
+            case val: //code block
+            break;
+            case val: //code block
+            break;
+            case val: //code block
+            break;
+            default: //code block
+        }
+
+
+
+     // let color = "red";
+
+        let color = prompt("Enter the color inlowercase from red ,blue,green,black");
+
+        switch (color) {
+            case "red": document.writeln("Color is red")
+                break;
+
+            case "blue": document.writeln("Color is blue")
+                break;
+
+            case "green": document.writeln("Color is green")
+                break;
+
+            case "black": document.writeln("Color is black")
+                break;
+
+            default: console.log("Invalid color")
+        }
+
+
+
+        //prompt and alert
+        let day = parseInt(prompt("Enter a number(1 to 7 for the day"))
+        switch (day) {
+
+            case 1: alert("sunday");
+            break;
+            case 2: alert("monday");
+            break;
+            case 3: alert("tuesday");
+            break;
+            case 4: alert("wednesday");
+            break;
+            case 5: alert("thrsday");
+            break;
+            case 6: alert("friday");
+            break;
+            case 7: alert("saturday");
+            default : alert("invalid choice");
+            
+        }

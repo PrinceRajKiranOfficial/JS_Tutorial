@@ -1,0 +1,226 @@
+JS operator arre symbols that are used to perform operations on operands.
+    •Unary
+    •Arithmetic
+    •Shift
+    •Relational
+    •Bitwise
+    •Logical
+    •Assignment
+    •Ternary
+    
+__________________________________________________________________________________________________________________________________________________________
+
+Unary operator
+    It needs on operands
+    There are 2 major operators:
+        -Increment 
+        -Decrement
+            Both have 2 varaitions of postfix and prefix
+
+        
+        Increment
+            -To increase the value by 1
+            -Postfix : first assign and then increment
+            -Prefix : first increment then assign
+
+        Decrement
+            -To decrease the value by 1
+            -Postfix : first assign and then decrement
+            -Prefix : first decrement then assign
+
+            example
+                let a = 10;
+                a++;
+                ++a;
+                console.log(a)//12
+
+                let b = 20;
+                --b;
+                b--;
+                console.log(b);//18
+
+                let c =7;
+                console.log(++c + --c -  ++c)
+                console.log(c)
+
+
+                let d = 7
+                ((--d + --d) + (d-- + --d) * (++d + d++) - (--d + --d))
+                ((6 + 5)+ (5 + 3) * (4 + 4) - (4 + 3))
+                (11 + 8*8 - 7)
+                (11+64-7)
+                (68)
+                console.log(d);//3(it will be the last value after the code)
+                console.log((--d + --d) + (d-- + --d) * (++d + d++) - (--d + --d));//68
+
+__________________________________________________________________________________________________________________________________________________________
+
+Arithmetic Operator
+    console.log(10+10);//20
+    console.log(50-10);//40
+    console.log(10*10);//100
+    console.log(10/2);//5 
+    console.log(10%2);//0
+    console.log(10**10);//10000000000(** represents power)
+
+__________________________________________________________________________________________________________________________________________________________
+
+ADDING STRINGS AND NUMBER
+    let x= 5+5;
+    console.log(x);//10
+    let y =  "5" + 5;
+    console.log(y);//55
+    let z = "Hello" + "5";
+    console.log(z);//Hello5
+    console.log(x,y,z)//10 '55' 'Hello5'
+
+    let x1 = 16 + 4 + "vovo"
+    console.log(x1)//20volvo
+
+__________________________________________________________________________________________________________________________________________________________
+
+toString METHOD
+    let za =100;
+    console.log(za);//100
+    console.log(typeof(za));//number
+    console.log(za.toString());//100
+    console.log(typeof(za.toString()));//string
+
+__________________________________________________________________________________________________________________________________________________________
+
+toExponential() METHOD -> toExponential() returns a string with a number rounded and written using exponential notation
+
+    example:
+        let f = 9.656;
+        console.log(f.toExponential(2));//9.66e+0
+        console.log(f.toExponential(4));//9.6560e+0
+        console.log(f.toExponential(5));//9.65600e+0
+
+__________________________________________________________________________________________________________________________________________________________
+
+toFixed() -> to fixed() returns a string, with a number written with a specified number of decimals
+
+    example
+        let m = 8.658;
+        console.log(m.toFixed(0));//"9"
+        console.log(m.toFixed(2));//"8.66"
+        console.log(m.toFixed(4));//"8.6580"
+
+__________________________________________________________________________________________________________________________________________________________
+
+toPrecision() -> toPrecision() returns a string , with a number written with a specified length
+example
+    let p = 9.656
+    console.log(p.toPrecision());//"9.656"
+    console.log(p.toPrecision(2));//"9.7"
+    console.log(p.toPrecision(4));//"9.656"
+    console.log(p.toPrecision(6));//"9.65600"
+
+__________________________________________________________________________________________________________________________________________________________
+
+Compund Assignment with Augmented arithmetic operation
+        var l =5;
+        var o =3;
+        var n =8;
+        l= l+10;//l+=10
+        o= o-2;//o-=2
+        n= n*5;//n*=5
+        l=l/5;//l/=5
+
+__________________________________________________________________________________________________________________________________________________________
+
+shift operator - shift operator the bits by a specified number of times in either left pr right direction
+    types of shift Operator
+        1.left
+        2.right
+
+
+    example:
+        var q=8,r=2;
+        console.log("q<<r: "+ (q<<r)); //q<<r:32 //(8*2*2) { multiply by 2, left shift}
+        console.log("q>>r: "+ (q>>r));  //  q>>r:2   // (8/2/2) [ divide by 2, right shift]
+
+__________________________________________________________________________________________________________________________________________________________
+
+Relational operators
+    • It comprises operators for comparisons. Output will be in Boolean format.
+    • There are operators to check inequality i.e., <,>, <=, >=
+    • For equality check, we have 2 operators i.e., == and !=
+    • Difference between == and ===
+            • ==allow type coercion i.e., one type can change into another
+            at the time of comparison
+            • === does not allow type coercion
+            • == equal value and === equal value and equal type
+            Note:   console.log(NaN=NaN)//false
+                    console.log(NaN==NaN)//false
+                    console.log(+0 == -0)//true
+                    console.log(+0 === -0)//true
+
+__________________________________________________________________________________________________________________________________________________________
+
+Type Coercion
+    • Type coercion - when we are comparing 2 values of different
+    types, the one type will force other to change it type as well so
+    that comparison can be made possible.
+    • === can stop coercion
+    • if(1){} //1 will be converted to true
+    • Object.is(param1,param2) is similar to === but it is different for some cases such as
+    • Example 
+            console.log(+0 == = -0) //true
+            console.log(Object.is(+0,-0))//false
+            console.log(NaN==NaN)//false
+
+__________________________________________________________________________________________________________________________________________________________
+
+Bitwise Operator
+It computes by going bit by bit
+Bits of both operand is checked irrespective of what first
+operand bit is. 4 major bit operators are:
+    • & -bitwise and, returns 1 if both bits are 1 else 0.
+    • | -bitwise or, returns 1 if either of bits is 1 else 0.
+    • ^ -bitwise xor, returns 1 if both bits are different else 0.
+    • ~-bitwise not, changes 1 to 0 and vice versa.
+    Example:
+        var a1=8,b1=2; 
+        console.log('a1&b1 : ' + (a1&b1));//"a & b: "0'
+        console.log('a1|b1 : ' + (a1|b1));// "a |b": "10"
+        console.log('a1^b1 : ' + (a1^b1));//"a^b": "10"
+        console.log('~a1   : ' + (~a1))  ;//'~a' : "-9"
+        
+
+
+
+
+LOGICAL OPERATORS
+    • Used for conditions comparison that checks for the validity of condition and specifies the course of action to be taken.
+    • They are also used in loops as part of termination conditions.
+    • If the first condition is enough to give the final verdict, it will
+    not evaluate the second one.
+    • 3 operators are there:
+            • && -logical AND, returns true when both conditions evaluates to true
+            • || -logical OR, returns true when either of the conditions evaluates to true
+            • ! -logical not, return true when condition evaluates to false
+
+
+
+    Example:
+        var a=true, b=false;
+        console.log('a&&b : '+ (a&&b));//a&&b : false
+        console.log('a||b : '+ (a||b));//a||b : true
+        console.log('!a : '+ (!a));//!a : false
+
+
+
+Assignment and Ternary Operators
+• Assignment operator(0):
+    It is used to assign right hand side value to left hand side variable.
+• Ternary operator((condition)?console.log():console.log())
+    It is an alternative of if else.
+    Condition is placed before ? and if evaluates to true then LHS of colon gets executed else RHS of colon will.
+• Example:
+    var a=2;
+    console.log('a=2: '+ (a=2));// a=2 : 2
+    console.log((a==2) ? console.log("ok") : console.log("not ok"));//ok
+
+
+

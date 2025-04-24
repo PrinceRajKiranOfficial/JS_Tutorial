@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object literal
+        fruits ={
+        'apple' : 'red',
+        'mango' : 'yellow',
+        'guava' : 'green'
+    }
+    console.log(fruits);//{apple: 'red', mango: 'yellow', guava: 'green'}
+    console.log(fruits['mango']);//yellow
+
+
+    // exampl2 :create object inside object
+    let person = {
+        name : 'john',
+        tech : 'JS',
+        laptop : {
+            cpu : 'i7',
+            ram : '4GB',
+            brand : 'DELL'
+        }
+    }
+    console.log(person) //to print entire object
+    /*{name: 'john', tech: 'JS', laptop: {…}}
+    laptop    : 
+    {cpu: 'i7', ram: '4GB', brand: 'DELL'}
+    name
+    : 
+    "john"
+    tech
+    : 
+    "JS"*/
+    console.log(person.tech) //JS (toprint tech)
+    console.log(person.laptop.brand)  // DELL (to print brand of the laptop)
+    console.log(person.laptop.brand.length) //4  (to print lentgth of brand of the laptop)
+
+    delete person.tech
+    console.log(person)//{name: 'john', laptop: {…}}
+    
+    
+    
+    //using new keyword
+    let car1 = new Object();
+        car1.brand = "BMW";
+        car1.modal = "520d";
+        car1.color = "transparent";
+        console.log(car1)//{brand: 'BMW', modal: '520d', color: 'transparent'}
+        console.log(car1.brand)//BMW
+        console.log(car1.color)//transparent
+
+    // Object comparision 
+        let animal = new Object(); //new address allocated
+        let cat = animal;
+        let dog = animal;
+        console.log(cat == dog)  //same object reference
+        //output -> true
+
+        let horse = new Object(); //new address allocated
+        console.log(cat == horse)//output-> false
+        console.log(cat === horse)//output-> false
+        console.log(Object.is(cat, horse))//output-> false
+
+// to stringfy method 
+console.log(JSON.stringify(cat)===JSON.stringify(horse))//true
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+let str = "Apple,Banana,Kiwi";
+
+//slice method
+let part = console.log(str.slice(4,13))//output = e,Banana,
+let cpart = console.log(str.slice(-15,-8))//output = e,Banana,
+console.log(str.slice(6))//starting 6 characters removed
+console.log(str.slice(-4))//everything removed after 4 characters from the last
+
+//substr method
+console.log(str.substr(4,13))//output = e,Banana,Kiwi
+
+
+//replace method
+let text = "Good Morning!";
+console.log(text);
+console.log(text.replace("Morning","Afternoon"));
+
+
+let z = "Good Morning! and Good Afternoon!";
+console.log(z.replace("Good","Great"));//Great Morning! and Good Afternoon!
+
+let x = "Good Morning";
+console.log(x.replace("Good","Great"));//Great Morning!
+
+
+// RegExp
+console.log(z.replace(/GOOD/g,"Great"));//Great Morning! and Great Afternoon!
+console.log(z.replace(/GOOD/i,"Great"));//Great Morning! and Good Afternoon!
+console.log(z.replace(/GOOD/gi,"Great"));//Great Morning! and Great Afternoon!
+
+
+
+//uppercase and lower cse
+let a1 =  "india";
+console.log(a1.toUpperCase());
+console.log(a1.toLowerCase());
+
+
+//concat
+let text1 = "hello";
+let text2 = "World";
+
+console.log(text1.concat(text2));
+console.log(text1+text2);
+
+
+
+//trim method
+let d="           Hello World            ";
+console.log(d.trim());//Hello World
+
+
+// split method
+    let m="hello";
+    console.log(m.split()) //['hello'] (converts to array)
+    console.log(typeof(m.split())) // array
+
+
+//sting indexof
+    let c = "APPLE";
+    console.log(c.indexOf("E"));//4
+    console.log(c.indexOf("P"));//1
+    console.log(c.lastIndexOf("P"));//2
+    console.log(c.startsWith("AP"));//true
+    console.log(c.startsWith("p"));//false
+    console.log(c.endsWith("LE"));//true
+    console.log(c.endsWith("L"));//false
+    console.log(c.includes("PPL"));//true
+    console.log(c.search("L"));//3
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

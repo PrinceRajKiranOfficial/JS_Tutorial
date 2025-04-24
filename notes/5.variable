@@ -1,0 +1,11 @@
+Variable is a name of a memory location where the data is stored 
+Syntax:
+    var varname = value;
+
+In JavaScript,variable is defined using var Keyword
+    var name="Anil";
+    var reg_no =50
+    var marks =90.5
+    let y = 123e5;  //12300000
+    let z = 123e-5;  //0.00123
+    

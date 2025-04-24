@@ -1,0 +1,97 @@
+there are 3 methods for extracting a part of a string:
+    1.slice(start,end) -> slice() extracts a part of a string and returns that extracted part in a new string
+
+                        this method takes 2 parameter: the start position, and the end position(end not included).
+                        example:    let str = "Apple,Banana,Kiwi";
+                                    console.log(str.slice(4,13))//output = e,Banana,
+                                    console.log(str.slice(-15,-8))//output = e,Banana,
+                                    console.log(str.slice(6))//starting 6 characters removed
+                                    console.log(str.slice(-4))//everything removed after 4 characters from the last
+            
+    2.substring(start,end) -> simialar to slice method but negative index not possibe
+
+    3.substr(start,length) ->   substr() is similar to slice().
+                                the difference here is the second parameter specifies the length of the extracted part
+                                example:    let str = "Apple,Banana,Kiwi";
+                                            console.log(str.substr(4,13))//output = e,Banana,Ki
+
+
+-----------------------------------------------------------------------------------------------
+
+replace method ->   replace method replace a specified value with another value in a string
+                    replace method does not change the value it creates a new string
+                    Example:    let text = "Good Morning!";
+                                console.log(text);//Good Morning!
+                                console.log(text.replace("Morning","Afternoon"));//Good Afternoon!
+
+
+                    replace method will only replace first match
+                                example: let z = "Good Morning! and Good Afternoon!";
+                                console.log(z.replace("Good","Great"));//great Morning! and Good Afternoon!
+
+                                let x = "Good Morning";
+                                console.log(x.replace("Good","Great"));//great Morning!
+
+
+
+                    to overcome this we have to use regular expression RegExp()
+                            gflag -> global flag(all same value will be replaced)
+                            iflag -> incase sensitive
+
+                        Example:    console.log(z.replace(/Good/g,"Great"));//great Morning! and Great Afternoon!
+                                    console.log(z.replace(/GOOD/i,"Great"));//Great Morning! and Good Afternoon!
+                                    console.log(z.replace(/GOOD/gi,"Great"));//Great Morning! and Great Afternoon!
+
+-----------------------------------------------------------------------------------------------          
+
+uppercase and lower cse method
+    let a1 =  "india";
+    console.log(a1.toUpperCase());
+    console.log(a1.toLowerCase());
+
+
+-----------------------------------------------------------------------------------------------
+
+concat method
+    adds two or more strings
+        example:let text1 = "hello";
+                let text2 = "World";
+                console.log(text1.concat(text2));//helloworld
+                console.log(text1+text2);//helloworld
+
+-------------------------------------------------------------------------------------------------------
+
+trim method -> remove the spaces begining and ending of the value but it doesnot remove the centerspace
+                    example:let d="           Hello World            ";
+                            console.log(d.trim());                             //output -> Hello World
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+split method -> converts the string to array
+
+
+    example:let m="hello";
+            console.log(m.split()) //['hello'] (converts to array)
+            console.log(typeof(m.split())) // array
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+string indexOf method
+    let c = "APPLE";
+    console.log(c.indexOf("E"));//4
+    console.log(c.indexOf("P"));//1
+    console.log(c.lastIndexOf("P"));//2
+    console.log(c.startsWith("AP"));//true
+    console.log(c.startsWith("p"));//false
+    console.log(c.endsWith("LE"));//true
+    console.log(c.endsWith("L"));//false
+    console.log(c.includes("PPL"));//true
+    console.log(c.search("L"));//3
+    
+
+-------------------------------------------------------------------------------------------------------

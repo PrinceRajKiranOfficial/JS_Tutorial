@@ -1,0 +1,21 @@
+There are 3 ways to decalre a variable
+    1.var : Declare a variable
+    2.let : Declares a block variable
+    3.const : Declares a black constant
+
+Example:
+    var MyNAme = "Nihal"
+    MyNAme = 32
+    let Name = "hello"
+    const pi = 3.14
+
+
+
+Programmers have used different ways of joining multiple words into one variable name:
+    Underscore:(snake casing rule)
+        first_name,Last_name,inter_city
+    Upper Camel Case (Pascal case) : (camel casing rule)
+        FIrstName,LastName,MasterCard,inter_city
+    Lower Camel Case:
+    Javascript programmers tend to use came case that starts with a lowercase letter :
+        firstName,lastNAme,masterCard,interCity

@@ -1,0 +1,25 @@
+European Computer Manufacture Association
+ECMA 262.
+
+-----------------------------------------------------------------------------------------------
+
+JavaScript is a interpreted language.
+    interpreter- checking line by line or statement by statement and then executing the program.
+    //compiler- checking all code at once and then execte it.
+
+
+
+Name  of javascript engine is JSEngine(interpreter).
+
+
+Firefox is using JSEngine and remaing all is using V8Engine.
+        -V8Engine support both compiler and interpreter
+
+
+-----------------------------------------------------------------------------------------------
+
+*Q-JS is interpreter or compiler language?
+    *Ans-interpreter
+
+
+

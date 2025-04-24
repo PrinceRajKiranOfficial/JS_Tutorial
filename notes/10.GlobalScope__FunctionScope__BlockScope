@@ -1,0 +1,27 @@
+Global Scope - we can access the value inside and outside the function
+-----------------------------------------------------------------------------------------------
+Function Scope - we can access the value only inside the function
+-----------------------------------------------------------------------------------------------
+
+
+
+Block Scope - we can access the value only inside the block
+// block scope
+//using let property we can access the value inside the block only
+{
+    let blockScope ="I am block scope";
+    console.log(blockScope);
+}
+console.log(blockScope);//Error Not defined
+
+//using var property we can access the value both inside and outside the block
+
+{
+    var blockScope ="I am block scope";
+    console.log(blockScope);
+}
+console.log(blockScope);// No Error 
+
+
+
+-----------------------------------------------------------------------------------------------

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Arrays
+        var a = [1, 1.5, 'Hii', false, null]
+        console.log(a[3])
+
+        let b = [1, 'hii', , true]
+        console.log(b[2])//undefined
+        console.log(b[6])//undefined
+        console.log(b)// [1, 'hii', empty, true]
+
+
+
+        //CHANGING THE ARRAY ELEMENT
+        // eg.
+        const fruits = ['apple', 'banana', 'cherry'];
+        fruits[0] = 'orange';
+        console.log(fruits)//['orange', 'banana', 'cherry']
+
+        // eg.2
+        const person = ['john', "doe", 40];
+        console.log(person[1])//doe
+        // Arrays use numbers to access its "Elements"
+
+
+
+        //ARRAYS ARE OBJECT
+        const person1 = { firstName: "John", lastName: "Doe", age: 46 };
+        console.log(person1.firstName)//John
+
+
+
+
+        //SPLICE METHOD
+        let arr3 = [2, 5, 6, 4, 9];
+        console.log(arr3)// [2, 5, 6, 4, 9]
+        arr3.splice(1, 3, "hii");
+        console.log(arr3) //[2, 'hii', 9]
+
+        let arr4 = [14, 2, 3, 5]
+        arr4.splice(1, 3);
+        console.log(arr4)//[14]
+
+
+        // SLICE
+        
+        let arr5 = [1, 2, 3, 6 , "hii"]
+        let arr6 = arr5.slice(1,3);
+        console.log(arr5) //[1, 2, 3, 6 , "hii"]
+        console.log(arr6) //[2,3]
+        
+        // NOTE : Elements from index 1 (inclusive) to 3(exclusive) are assigned to arr6
+
+
+        //SORTING AN ARRAY
+        //The sort() method sorts an array alphabetically.
+        // example
+        const fruits1 = ["banana" , "Orange" , "Apple" , "Mango"];
+        console.log(fruits1.sort()) //['Apple', 'Mango', 'Orange', 'banana']
+        console.log(fruits1.reverse())//['banana', 'Orange', 'Mango', 'Apple']
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

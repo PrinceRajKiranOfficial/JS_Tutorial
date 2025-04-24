@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //For Loop
+        for (u = 0; u <= 4; u++) {
+            console.log(u + " you can do it");
+        }
+
+        // for in
+        // using for in loop you will get the ouput in indexes.
+        // it will give all the index 
+        //for in
+        let fruits = ['apple', 'orange', 'mango', 'grapes']
+
+        for (a in fruits) {
+            console.log(a)
+        }
+
+        //for of
+        let cars = ['Volvo', 'Toyota', 'Audi', 'BMW']
+        for (i of cars) {
+            console.log(i)
+        }
+
+        let Snames = ['ramu', 'somu', "pomu"];
+        console.log(Snames)
+
+
+        // for each 
+        let fruits1 = ['apple', 'orange', 'mango', 'kiwi', 'grapes']
+        fruits1.forEach(item => console.log(item))
+
+
+
+        //while
+        let k = 0;
+        while (k < 5) {
+            console.log(k)
+            k++;
+        }
+
+
+        //do while
+        let j = 1
+        do {
+            console.log(j)//1
+            j++
+        } while (j >= 4)
+
+
+
+        // break
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {break;}
+            console.log("The number is " + i)
+        }
+
+        // continue
+        for (let i = 0; i < 10; i++) {
+            if (i === 6) {continue;}
+            console.log("The number is " + i)
+        }
+    </script>
+
+
+</body>
+
+</html>

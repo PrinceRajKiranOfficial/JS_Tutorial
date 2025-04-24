@@ -1,0 +1,14 @@
+let hoisting is nothing but first assigning the value then declare the variable
+// Let hoisting
+sname="Prince";
+let sname;
+console.log(sname);  // error (it is possible only in var property (let and const not possible))
+
+
+var age=20;
+let age =30;
+console.log(age); // error age is already declared using var to redeclare it use  var instead for let or const
+
+var age=20;
+var age =30;
+console.log(age); //No Error
