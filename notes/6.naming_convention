@@ -1,0 +1,5 @@
+->Variable name should start with letter,$,or an underscore(_).
+->Variable name is case sensitive.
+->Example:
+    *valid= xyz,_name,$address,Name123
+    *invalid= 12name,*Reg_no,@mail

@@ -1,0 +1,16 @@
+JS strings are primitive values,created from literals.
+    let x= "prince";  // x is string
+
+string can also be defined as objects with keyword new
+    let y = new String("prince"); // y is object
+
+
+
+let x= "prince";  // x is string
+let y = new String("prince"); // y is object
+console.log(x==y);//Output= true
+
+
+let x = new String("prince"); // x is object
+let y = new String("prince"); // y is object
+console.log(x==y);//Output= false

@@ -1,0 +1,93 @@
+Loops
+• Loops are used to do a repeated task until a specified
+condition remains true.
+• Different types of loops are
+    🚗 For loop -> you know the ending of loops (Note:- for printing the arrays( For each,For of,For in))
+            It is best to use for loop when we know that the code should be executed specified number of times.
+            Syntax:
+                for (initialization; condition; increment) {
+                //code block to be executed}
+                    🦴 initialization - used to initialize the variable, which is being used for iteration. It is executed once before the code block gets executed.
+                    🦴condition - defines condition which determine till when iteration will continue. i.e., how many times you want to execute the statements within this block.
+                    🦴 increment - executed every time after the code block has been 
+            🔥 For each -
+
+
+
+
+
+
+
+
+            🔥 For of - you will get all the elements of the arrays
+                    let cars=['Volvo','Toyota','Audi','BMW']
+                    for (i of cars)
+                    {
+                        console.log(i)
+                    }
+
+            🔥 For in -> using for in loop you will get the ouput in indexes.
+                // it will give all the index 
+                        let fruits=['apple','orange','mango']
+                        for (a in fruits)
+                        {
+                            console.log(a)
+                        }
+
+    🚗 While loop
+        Note:- You do not know the end of loop
+                let k=0;
+        while (k<5){
+            console.log(k)
+            k++;
+        } 
+
+
+
+    🚗Do-while loop
+        Note:- First Implementing then checking the condition
+
+        //synchornize - sequal execution
+        //asynchornize - parallel execution
+
+            //do while
+                    let j = 1
+                    do {
+                        console.log(j)//1
+                        j++
+                    } while (j >= 4)
+
+
+
+
+
+
+
+Break
+    • The break statement "jumps out" of a loop.
+        Example:
+            for (let i = 0; i < 10; i++) {
+            if (i == 3) { break; }
+            text += "The number is " + i + "<br>";
+            }
+            Output:
+            The number is 0
+            The number is 1
+            The number is 2
+            Note:
+            the break statement ends the loop, when the loop counter, i is 3.
+
+                // break
+                for (let i = 0; i < 10; i++) {
+                    if (i == 3) {break;}
+                    console.log("The number is " + i)
+                }
+
+
+Continue
+        to skip the iteration
+            for (let i = 0; i < 10; i++) {
+                if (i === 6) {continue;} //except 6 each no will be printed
+                console.log("The number is " + i)
+            }   
+                

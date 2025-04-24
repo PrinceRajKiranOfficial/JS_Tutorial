@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        let animal = new Object();
+                        let cat = animal;
+                        let dog = animal;
+                        console.log(cat == dog)  //same object reference
+                        //output -> true
+
+                        let horse = new Object(); //new address allocated
+                        console.log(cat == horse)
+                        //output-> false
+                        console.log(cat === horse)
+                        //output-> false
+                        console.log(Object.is(cat, horse))
+                        //output-> false
+
+// to stringfy method -> 
+    console.log(JSON.stringify(cat)==JSON.stringify(horse))//true
+    </script>
+</body>
+</html>

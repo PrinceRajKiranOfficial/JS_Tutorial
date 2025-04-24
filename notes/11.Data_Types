@@ -1,0 +1,126 @@
+Data types are divided into two cateogaries (actualy 8 (7 primitive and 1 Non-Primitive))
+    1.Primitive data type 
+    2.Non-Primitive data type 
+
+Primitive
+    1.number 
+    2.string
+    3.boolean
+    4.undefined
+    5.null(All in small)
+    **6.bigint**
+    7.Symbol(capital S do not forget)
+    
+
+Non-Primitive
+    1.object    //Arrays are treated as an object
+                //RegExp(regular Expression) are also treasted as an Arrays
+
+
+1.number
+    used to store integer and floating point number
+    var a=23;
+        console.log(a);
+        console.log(typeof(a));
+    var b=40.53;
+        console.log(b);
+        console.log(typeof(b));
+    var c=98;
+        console.log(c);
+        console.log(typeof(c));
+    var d=0xf;//hex dec value
+        console.log(d);
+        console.log(typeof(d));
+    var e=1.5e12;//exponential number
+        console.log(e);
+        console.log(typeof(e));
+    var f=100_00_000;
+        console.log(f);
+        console.log(typeof(f));
+
+2.string  
+    used to store sequence(collection) of characters
+        let s='hello'
+        console.log(s);
+        console.log(typeof(s));
+
+
+        back ticks(``)
+
+            console.log(`${sname} 
+            is
+            a
+            22
+            years
+            old`)
+
+
+            let clg = "Parul"
+            console.log(`${sname}
+            is
+            a
+            student
+            in
+            ${clg}`);
+
+
+
+
+3.boolean - it is used to assign a variable as the true or false
+        var isValid=true;
+        console.log(isValid);//true
+        console.log(typeof(isValid));//Boolean
+
+
+
+4.undefined - it is used to specify a value of a varible which is not defined yet
+        let z;
+        console.log(z);//output=undefined
+        console.log(typeof(z));//output=undefined
+
+
+5.null  - it is used to explicitly specify that the value of a variable is null
+        let x=null;
+        console.log(x);//output=null
+        console.log(typeof(x));//output=object
+
+
+6.bigint
+let k =12345789134567897413123456124651122222222313212416545213241654561321561021263412121542312341564321n;//n indicates bigint
+console.log(k);
+console.log(typeof(k));bigint
+
+let i=123n;//n indicates bigint
+console.log(i);//123n
+console.log(typeof(i));//bigint
+
+7.Symbol
+    it is used to create the unique value
+        let sym=Symbol("prince");
+        let sym1=Symbol("prince");
+        
+        console.log(sym==sym1);//false(bcz symbol is always unique)
+
+
+
+
+DIFFERENCE BETWEEN UDEFINED AND NULL
+undefined and null - values are equal but types are different
+        console.log(undefined==null);//true (values are same)
+        console.log(undefined===null);//false(datatype different)
+
+
+
+//length method
+length counting starts from 1 (space also counted)
+let fname = "prince raj kiran";
+console.log(fname.length);//16
+
+
+    Note:
+    • The data type of NaN is number
+    • The data type of an array is object
+    • The data type of a date is object
+    The data type of null is object
+    The data type of an undefined variable is undefined 
+    The data type of a variable that has not been assigned a value is also undefined

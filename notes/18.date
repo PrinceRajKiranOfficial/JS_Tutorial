@@ -1,0 +1,56 @@
+DATE OBJECT 
+    date object can be used to get year , month,and day
+    you can deisplay a timer on the webpage by the help of JS date object
+    You can use differnt Date constuctors to create date object.It provides methods to get (Incomplete)
+
+
+Date object
+    date()
+    date(miliseconds)
+    date(data string)
+    date(year,month,day,hours,minutes,seconds,miliseconds)
+
+
+example:
+     // date object
+        //get method
+        let date = new Date();
+        document.writeln(date.getFullYear())
+        document.writeln("<br>")
+        
+        document.writeln(date.getMonth() + 1)
+
+        document.writeln("<br>")
+        
+        document.writeln(date.getDate())
+        
+        document.writeln("<br>")
+        
+        document.writeln(date.getHours())
+        
+        document.writeln(" : ")
+        
+        document.writeln(date.getMinutes())
+        
+        document.writeln(" : ")
+        
+        document.writeln(date.getSeconds())
+        
+        document.writeln(" : ")
+        
+        document.writeln(date.getMilliseconds())
+        
+        document.writeln("<br>")
+        
+        document.writeln(date.getDay())
+        
+        document.writeln("<br>")
+        
+        document.writeln(date.getTime())
+        
+        document.writeln("<br>")
+        
+        
+SET METHOD
+        date.setFullYear(2025,03,23);
+        document.writeln(date)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const object
+        const car1= {
+            type : "BMW",
+            model: "X5",
+            year: 2020,
+            color: "black"
+        }
+        // using const in arrays and object reassign the value of a property cannot be reassigned, but the properties themselves can be modified or added  property
+        console.log(car1);
+        car1.color="White";// Updating the color property
+        console.log(car1);
+        car1.owner = "Prince";
+        console.log(car1); // Logging the updated car object 
+        console.log("car owner is ".concat(car1.owner))
+        delete car1.color
+        console.log(car1)
+        
+    </script>
+</body>
+</html>

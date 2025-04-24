@@ -1,0 +1,7 @@
+using global variable we can access inside the function as well as outside the function(Anywhere or any place).
+    using local variable we can only access inside the function
+    console.log("Prince")-  console is the object____log is the method
+
+
+reference variable- > it holds the address
+                    -> other name of address if reference

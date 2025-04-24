@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+//Const array
+        const cars = ['sab','volvo','BMW']
+        console.log(cars)//['sab', 'volvo', 'BMW']
+        // cars = ['toyota','alto 800','omni']
+        //console.log(cars)//error (so comment it)
+        //USING CONST WE CANNOT REASSIGN THE VALUES
+        cars[0] = 'Alto 800'
+        console.log(cars)//['Alto 800', 'volvo', 'BMW']
+        cars[2] = 'Omni'
+        console.log(cars)//['Alto 800', 'volvo', 'Omni']
+        
+//push method -. adds the element at last index
+        cars.push("audi")
+        console.log(cars)// ['Alto 800', 'volvo', 'Omni', 'audi']
+        
+        
+//pop method -> removes the element at last index
+        cars.pop()
+        console.log(cars)// ['Alto 800', 'volvo', 'Omni']
+
+//unshift mehod -> add the element in the begining
+        cars.unshift("nano")
+        console.log(cars)//['nano', 'Alto 800', 'volvo', 'Omni']
+
+//shift method -> remove the element in the begining
+        cars.shift("nano")
+        console.log(cars)// ['Alto 800', 'volvo', 'Omni']
+
+    </script>
+</body>
+
+</html>

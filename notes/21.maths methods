@@ -1,0 +1,47 @@
+Math Methods
+    Syntax:
+        Math.method(number)
+
+    Number to Integer:
+        • There are 4 common methods to round a number to an integer
+            → Math.round(x) : Returns x rounded 
+              to its nearest integer
+            → Math.ceil(x) : Returns x rounded 
+              up to its nearest integer
+            → Math.floor(x) : Returns x rounded 
+              down to its nearest integer
+            → Math.trunc(x) : Returns the 
+              integer part of x
+
+
+
+    Math.sign()
+        Math.sign(x) returns if x is negative, null or positive
+            Math.sign(-4);//-1
+            Math.sign(0);//0
+            Math.sign(4);//1
+
+    Math.pow()
+        • Math.pow(x, y) returns the value of x to the power of y
+            Math.pow(9, 2); //81
+
+    Math.sqr()
+        • Math.sqrt(x) returns the square root of x
+            Math.sqrt(81);//9
+
+    Math.abs()
+        • Math.abs(x) returns the absolute (positive) value of x
+            Math.abs(-5.98); //5.98
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    Min and Max Method
+    Max - finding the max value
+    Min - finding the min value
+
+    console.log(Math.max(150,250,10,65,1050,1250,125)); //1250
+    console.log(Math.min(150,250,10,65,1050,1250,125)); //10
+
+
+    Random Method -> prints a random number
+
