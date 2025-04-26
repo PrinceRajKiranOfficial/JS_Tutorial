@@ -1,0 +1,113 @@
+Window Methods
+
+open()
+    • opens a new window
+
+close()
+    • closes the current window
+
+moveTo()
+    • move the current window
+
+resizeTo()
+    • resize the current window
+
+alert()
+    • displays the alert box containing message with ok button.
+
+confirm ()
+    • displays the confirm dialog box containing message with ok and cancel button.
+
+prompt()
+    • displays a dialog box to get input from the user.
+
+setTimeout()
+    • performs action after specified time like calling function, evaluating expressions
+
+
+history.back()
+history.forward()
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+        document.writeln(window.innerHeight)
+        document.writeln("<br>")
+        document.writeln(window.innerWidth)
+        document.writeln("<br>")
+        document.writeln(screen.height)
+        document.writeln("<br>")
+        document.writeln(screen.width)
+        document.writeln("<br>")
+        document.writeln(screen.availHeight)
+        document.writeln("<br>")
+        document.writeln(screen.availWidth)
+        document.writeln("<br>")
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+window location
+    //asign ,reload, replace
+
+        assign
+            window.location.assign("https://in.bookmyshow.com/")
+        reload
+            window.location.reload("https://in.bookmyshow.com/")
+        replace
+            window.location.replace("https://www.amazon.in/ref=nav_logo")
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+        location properties
+                document.writeln(window.location.hostname)
+                document.writeln("<br>")
+                document.writeln(window.location.href)
+                document.writeln("<br>")
+                document.writeln(window.location.href)
+                document.writeln("<br>")
+                document.writeln(window.location.pathname)
+                document.writeln("<br>")
+                document.writeln(window.location.protocol)
+                document.writeln("<br>")
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+        navigator
+                document.writeln(window.navigator.appName)
+                document.writeln("<br>")
+                document.writeln(window.navigator.appCodeName)
+                document.writeln("<br>")
+                document.writeln(window.navigator.appVersion)
+                document.writeln("<br>")
+                document.writeln(window.navigator.product)
+                document.writeln("<br>")
+                document.writeln(window.navigator.userAgent)
+                document.writeln("<br>")
+                document.writeln(window.navigator.platform)
+                document.writeln("<br>")
+                document.writeln(window.navigator.language)
+                document.writeln("<br>")
+                document.writeln(window.navigator.online)
+                document.writeln("<br>")
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

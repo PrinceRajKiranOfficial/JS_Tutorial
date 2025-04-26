@@ -1,0 +1,73 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 320px;
+}
+
+.otp-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #764ba2;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.otp-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.6);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px 0;
+    background: #764ba2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.submit-btn:hover {
+    background: #5a368a;
+}
+
+.resend-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.resend-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.resend-link:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}

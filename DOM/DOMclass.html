@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p class="raj"></p>
+        <h1 class="raj"></h1>
+        <h5 class="raj"></h5>
+        <button onclick="mad()">touch me</button>
+        <script>
+            function mad() {
+                document.getElementsByClassName("raj")[0].innerHTML = new Date();
+                document.getElementsByClassName("raj")[1].innerHTML = "change is life";
+                document.getElementsByClassName("raj")[2].innerHTML = "Stagnation is death";
+                document.getElementsByClassName("raj")[0].style.color = "red";
+                document.getElementsByClassName("raj")[1].style.color = "blue"; 
+                document.getElementsByClassName("raj")[2].style.color = "green";
+            }
+        </script>
+</body>
+</html>

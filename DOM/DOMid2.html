@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sam"></p>
+        <button id="btn_edi" onclick="myFunction()"> Click Here to get the date </button>
+        <script>
+            function myFunction() {
+                document.getElementById("sam").innerHTML = new Date();
+                document.getElementById("sam").style.color = "red";
+                document.body.style.backgroundColor = "yellow"; 
+                document.body.style.backgroundImage = "url('https://www.w3schools.com/w3images/lights.jpg')";
+                document.body.style.backgroundRepeat = "no-repeat";
+                document.body.style.backgroundSize = "cover";
+            }
+            
+        </script>
+
+</body>
+</html>

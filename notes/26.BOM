@@ -1,0 +1,31 @@
+JavaScript Window - The Browser Object Model
+• The Browser Object Model (BOM) allows JavaScript to interact with the browser.
+All browsers are split into different parts or objects that can be accessed using JavaScript. Collectively these parts are known as BOM.
+
+
+Browser default object is the window object and this represents the eintire browser
+• Effectively the window object is the browser.
+• Underneath window object there are lot of other objects.
+
+  Window
+    |---document
+    |---history 
+    |---screen
+    |---navigator
+    |---location
+
+
+• All global JavaScript objects, functions, and variables automatically
+become members of the window object.
+• Global variables are properties of the window object.
+• Global functions are methods of the window object.
+• Window is a global object, which means you don't need to use its name to access its properties and methods.
+Example:
+alert() is a method of the browser's window object.
+You can call alert() either with:
+        window.alert("Hello");
+                    or just
+        alert("Hello");
+
+
+

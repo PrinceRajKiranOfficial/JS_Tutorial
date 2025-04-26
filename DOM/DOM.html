@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="satya">Good Afternoon</h1>
+    <button onclick="hp">try it</button>
+    <script>
+        function hp() {
+            document.getElementById("satya").innerHTML = "Satya is doing something with DOM";
+
+        }
+        setTimeout(hp, 3000);
+        setInterval(hp, 1000);
+    </script>
+</body>
+</html>

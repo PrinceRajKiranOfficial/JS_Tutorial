@@ -1,0 +1,24 @@
+getElementById - Method
+    • It is the fundamental method within the DOM for accessing
+elements on the page.
+    • Accesses any element on the page via its ID attribute.
+    • The most common way to access an HTML element is to use the id of the element.
+    This method will returns single element.
+
+innerHTML - Property
+    • It is the easiest way to get the content of an element.
+        It is used to get and replace the content of HTML elements
+        The document object represents your web page.
+    If you want to access any element in an HTML page, you always
+start with accessing the document object.
+
+
+Findinng HTML Elements
+
+    document.getElementById(id)  - Findinng an element by element id
+    document.getElementByTagName(name)  - Findinng an element by tag name
+    document.getElementByClassName(name)  - Findinng an element by class name
+
+
+
+
